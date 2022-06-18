@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2 Student Registration form -Muskan juneja</title>
+    <link rel="stylesheet" href="task2.css">
+    <script src="task2.js"></script>
+</head>
+
+<body>
+    <div class="container">
+            <div class="formbox">
+                <h1>Registration form</h1>
+                <p id="intro">Fill in the required details in form-By Muskan</p> <br>
+                <label for="Name" id="l1">Name :</label>
+                <br>
+                <input id="Name" type="text" placeholder="Enter your name">
+                <br> <br>
+                <label for="Image" id="l2">Link to your Profile image: </label>
+                <br>
+                <input id="Image" type="text" placeholder="link here">
+                <br> <br>
+                <label for="Course" id="l3">Course : </label>
+                <br>
+                <input id="Course" type="text" placeholder="ex:BCA">
+                <br> <br>
+                <label for="gender" id="l4">Gender :</label> <br>
+                <label for="Male" style="margin-top:10px ;">Male</label>
+                <input type="radio" id="Male" name="gen" value="Male" style="margin-top:10px ;"> <br>
+                <label for="Female">Female</label>
+                <input type="radio" id="Female" name="gen" value="Female"> <br>
+                <label for="Others">Others</label>
+                <input type="radio" name="gen" id="Others" value="Others"> <br>
+                <br>
+                <p style="font-weight:bold; font-style: italic;">Your areas of speciality : </p>
+                <input type="checkbox" id="spl" name="w" value="Web development" style="margin-top:10px ;">
+                <label for="spl" style="margin-top:10px;">Web Development</label>
+                <br>
+                <input type="checkbox" id="spl2" name="a" value="App development">
+                <label for="spl2">Application Development</label>
+                <br>
+                <input type="checkbox" id="spl3" name="d" value="Data Science">
+                <label for="spl3">Data Science</label>
+                <br>
+                <button id="submit" onclick="display()">Submit</button>
+                <button id="submit" onclick="clean()">Clear</button>
+            </div>
+        <div class="display">
+            <table id="infotable">
+                <tr>
+                    <th>Student's Details</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
